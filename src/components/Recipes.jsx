@@ -22,10 +22,14 @@ const Recipes = () => {
             <h3>Current Recipe:</h3>
             <button onClick={
                 () => setRecipe(elvenShieldRecipe)
-            }>elevn Shield Recipe</button>
+            }>
+                elevn Shield Recipe
+            </button>
             <button onClick={
                 () => setRecipe(elvenGauntletsRecipe)
-            }>elven Gauntlets Recipe</button>
+            }>
+                elven Gauntlets Recipe
+            </button>
 
             <ul>
                 {Object.keys(recipe).map((material) => (
