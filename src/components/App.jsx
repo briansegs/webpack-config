@@ -11,9 +11,9 @@ const App = () => {
             <section>
                 <h1>Oh hai O, React</h1>
             </section>
+            <Recipes />
             <img src={Black} alt="black head" width="250px" />
             <img src={Green} alt="Green head" width="250px" />
-            <Recipes />
         </main>
         </>
     );

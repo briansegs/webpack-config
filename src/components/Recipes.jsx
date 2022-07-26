@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from '@carbon/react';
 
 const elvenShieldRecipe = {
     leatherStrips: 2,
@@ -20,16 +21,17 @@ const Recipes = () => {
     return (
         <div>
             <h3>Current Recipe:</h3>
-            <button onClick={
-                () => setRecipe(elvenShieldRecipe)
-            }>
+            <Button
+                onClick={() => setRecipe(elvenShieldRecipe)}
+                disabled="true"
+            >
                 elevn Shield Recipe
-            </button>
-            <button onClick={
+            </Button>
+            <Button onClick={
                 () => setRecipe(elvenGauntletsRecipe)
             }>
                 elven Gauntlets Recipe
-            </button>
+            </Button>
 
             <ul>
                 {Object.keys(recipe).map((material) => (
